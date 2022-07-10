@@ -1,0 +1,42 @@
+<!-- /templates/my-form.html-->
+
+<html>
+    <head>
+        <title>Concrete Slab Maximum Wall Load Calculator</title>
+    </head>
+    <body>
+	    <h3>IDS 170: Principles for STEM Innovation<br />Summer 2022</h3>
+
+	    <h4>Concrete Slab Maximum Wall Load Calculator</h4>
+        <form action="/post-handler" method="POST">
+            <div>
+                <p>
+                    Concrete compressive strength (in psi or kPa) [typical values are 2500 psi to 4000 psi and higher in residential and commercial structures]<br />
+                    <input type="text" name="fc_id">
+                </p>
+
+                <p>
+                    Modulus of subgrade reaction (in pci or MPa/m) [typical values are 100-400 pci for coarse grained soils and 25-150 pci for fine grained soils]<br />
+                    <input type="text" name="k_id">
+                </p>
+
+                <p>
+                    Slab thickness (in or mm)<br />
+                    <input type="text" name="te_id">
+                </p>
+            </div>
+                <input type="submit" value="Submit">
+        </form>
+    </body>
+
+    <!-- minimal styling -->
+    <style>
+        form {
+            margin: 1%;
+        }
+
+        div {
+            margin: 1% 0;
+        }
+    </style>
+</html>
